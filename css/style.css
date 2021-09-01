@@ -1,0 +1,96 @@
+.top-bar-wrapper {
+  width: auto;
+  height: 30px;
+  background-color: black;
+}
+.top-bar-wrapper .top {
+  width: auto;
+  height: 30px;
+}
+.top-bar-wrapper .logo {
+  position: absolute;
+}
+.middle-bar-nav {
+  margin: 0 auto;
+  height: 50px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.middle-bar-nav ul {
+  height: 50px;
+}
+.middle-bar-nav ul li {
+  float: left;
+  width: 295px;
+  text-align: center;
+}
+.middle-bar-nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 50px;
+  color: black;
+}
+.article {
+  margin-top: 10px;
+  height: 500px;
+}
+.article .top-article .main-img {
+  float: left;
+  width: 610px;
+  position: relative;
+}
+.article .top-article .main-img img {
+  width: 100%;
+  position: absolute;
+}
+.article .top-article .art {
+  float: right;
+  width: 580px;
+}
+.article .top-article .art .top-art {
+  margin-bottom: 10px;
+}
+.article .top-article .art .mid-art {
+  margin-bottom: 10px;
+}
+.article .top-article .art .left {
+  float: right;
+  width: 168px;
+}
+.article .top-article .art .left a {
+  text-decoration: none;
+}
+.article .top-article .art .left img {
+  width: 100%;
+}
+.article .top-article .art .left .title {
+  padding-left: 8px;
+}
+.article .top-article .art .left .title h2 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -40px;
+  font-size: 14px;
+  line-height: 40px;
+  color: white;
+}
+.article .top-article .art .right {
+  float: right;
+  margin-left: 40px;
+}
+.article .top-article .art .right ul {
+  height: 120px;
+}
+.article .top-article .art .right ul li {
+  list-style: disc;
+  line-height: 30px;
+  height: 30px;
+  font-size: 13px;
+}
+.article .top-article .art .right ul li a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+/*# sourceMappingURL=./style.css.map */
