@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪新闻</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <style type="text/css">
+        body {
+            background-color: #bbffaa;
+        }
+
+        .box1 {
+            width: 300px;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        .box2 {
+            height: 41px;
+            border-top: 1px #dddddd solid;
+        }
+
+        .title {
+            /* width: fit-content; */
+            /* 为了文字和边框一致 */
+            display: inline-block;
+            margin-top: -1px;
+            line-height: 41px;
+            border-top: 1px #f34540 solid;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        i {
+            font-family: arial;
+            color: #888888;
+        }
+
+        .title a {
+            text-decoration: none;
+        }
+
+        .title a:link {
+            color: #404040;
+        }
+
+        .title a:visited {
+            color: #404040;
+        }
+
+        .title a:hover {
+            color: rgb(243, 69, 64);
+        }
+
+        .box3 a {
+            text-decoration: none;
+        }
+
+        .box3 h2 {
+            margin-top: -40px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 40px;
+            color: white;
+        }
+
+        .box4 {
+            margin-top: 12px;
+        }
+
+        ul:not(li){
+            /* list-style: square; */
+            /* margin-left: 20px; */
+            color: grey;
+            font-size: 5px;
+        }
+        /* 伪类before */
+        ul li::before{
+            content: '■';
+            color: rgb(185, 185, 185);
+            font-size: 10px;
+            margin-right: 6px;
+        }
+
+        .box4 a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        .box4 li {
+            font-size: 14px;
+            height: 30px;
+        }
+        .title3{
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h1 class="title">
+                <a href="https://war.163.com/" target="_blank">军事</a>
+                <i>·</i>
+                <a href="https://news.163.com/air/" target="_blank">航空</a>
+            </h1>
+        </div>
+        <div class="box3">
+            <a href="https://cms-bucket.ws.126.net/2021/0716/9c34ed94j00qwbc1d003hc000s600e3c.jpg?imageView&thumbnail=300y150&type=webp"
+                target="_blank">
+                <img src="https://cms-bucket.ws.126.net/2021/0716/9c34ed94j00qwbc1d003hc000s600e3c.jpg?imageView&thumbnail=300y150&type=webp"
+                    alt="">
+                <div class="title3">
+                    <h2>
+                        伊朗民兵背着军犬搭乘摩托车作战
+                    </h2>
+                </div>
+            </a>
+        </div>
+        <div class="box4">
+            <ul>
+                <li><a href="">美国撤离阿富汗，在基地留下大量装备和垃圾</a></li>
+                <li><a href="">俄版F35？俄罗斯单发五代机照片流出</a></li>
+                <li><a href="">历时21年！英国退休老人复刻一战飞机</a></li>
+                <li><a href="">超音速客机归来？载客少一半燃料消耗增五倍</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
