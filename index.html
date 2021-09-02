@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/tools.js"></script>
+    <script type="text/javascript" src="js/classTools.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var imgList = document.getElementsByClassName("main");
+            var num = 0;
+            setInterval(function () {
+                addClass(imgList[num], "transparent");
+                num++;
+                num = num % imgList.length;
+                removeClass(imgList[num], "transparent");
+            }, 4000)
+        }
+
+    </script>
 </head>
 
 <body>
-    <div class="top-bar-wrapper w">
+    <div class="top-bar-wrapper">
     </div>
     <div class="title-bar w"><img src="img/title.png" alt=""></div>
     <div class="middle-bar-nav w">
@@ -25,10 +40,10 @@
     <div class="article w">
         <div class="top-article w">
             <div class="main-img w">
-                <img src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522168339174.jpg" alt="">
-                <img src="http://image.thepaper.cn/www/image/29/285/642.jpg" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522168339174.jpg" alt="">
+                <img class="main" src="http://image.thepaper.cn/www/image/29/285/642.jpg" alt="">
+                <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522125363155.jpg" alt="">
+                <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522107867385.jpg" alt="">
             </div>
             <div class="art">
                 <div class="top-art clearfix">
@@ -74,8 +89,8 @@
                     </div>
                     <div class="left">
                         <a href="">
-                            <img src="http://www.zhaoqing.gov.cn/img/0/71/71722/2092076.jpg" alt="">
-                            <div class="title"><h2>叶挺独立团团部旧址</h2></div>
+                            <img src="http://upload.xjrb.com/2021/0823/thumb_380_220_1629690275100.jpg" alt="">
+                            <div class="title"><h2>用文艺之美阐释党史精神</h2></div>
                         </a>
                     </div>
                 </div>

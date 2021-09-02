@@ -1,14 +1,14 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 .top-bar-wrapper {
-  width: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 30px;
   background-color: black;
-}
-.top-bar-wrapper .top {
-  width: auto;
-  height: 30px;
-}
-.top-bar-wrapper .logo {
-  position: absolute;
 }
 .middle-bar-nav {
   margin: 0 auto;
@@ -39,9 +39,10 @@
   width: 610px;
   position: relative;
 }
-.article .top-article .main-img img {
-  width: 100%;
+.article .top-article .main-img .main {
+  width: 605px;
   position: absolute;
+  transition: opacity 1s;
 }
 .article .top-article .art {
   float: right;
@@ -92,5 +93,8 @@
 .article .top-article .art .right ul li a {
   color: #1f1f1f;
   text-decoration: none;
+}
+.transparent {
+  opacity: 0;
 }
 /*# sourceMappingURL=./style.css.map */
