@@ -13,13 +13,23 @@
     <script type="text/javascript">
         window.onload = function () {
             var imgList = document.getElementsByClassName("main");
+            var disc = document.getElementsByClassName("disc");
             var num = 0;
             setInterval(function () {
                 addClass(imgList[num], "transparent");
                 num++;
                 num = num % imgList.length;
                 removeClass(imgList[num], "transparent");
-            }, 4000)
+                setA();
+            }, 3500)
+            function setA() {
+                for (var i = 0; i < disc.length; i++) {
+                    disc[i].style.backgroundColor = "";
+                    disc[i].style.opacity = "";
+                }
+                disc[num].style.backgroundColor = "green";
+                // disc[num].style.opacity = "80%";
+            }
         }
 
     </script>
@@ -34,16 +44,25 @@
             <li><a href="http://84074.github.io/history.html" target="_blank">历史</a></li>
             <li><a href="http://84074.github.io/personages.html" target="_blank">人物</a></li>
             <li><a href="http://84074.github.io/industry.html" target="_blank">产业</a></li>
-            <li><a href="http://84074.github.io/landscape.html">风光</a></li>
+            <li><a href="http://84074.github.io/landscape.html" target="_blank">风光</a></li>
         </ul>
     </div>
+
     <div class="article w">
-        <div class="top-article w">
-            <div class="main-img w">
+        <div class="top-article">
+            <div class="main-img">
                 <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522168339174.jpg" alt="">
-                <img class="main" src="http://image.thepaper.cn/www/image/29/285/642.jpg" alt="">
-                <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522125363155.jpg" alt="">
-                <img class="main" src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522107867385.jpg" alt="">
+                <img class="main transparent" src="http://image.thepaper.cn/www/image/29/285/642.jpg" alt="">
+                <img class="main transparent"
+                    src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522125363155.jpg" alt="">
+                <img class="main transparent"
+                    src="http://www.sihui.gov.cn/zjsh/shtk/shfg/201805/W020181227522107867385.jpg" alt="">
+                <div id="navDiv">
+                    <a class="disc" href="javascript:;"></a>
+                    <a class="disc" href="javascript:;"></a>
+                    <a class="disc" href="javascript:;"></a>
+                    <a class="disc" href="javascript:;"></a>
+                </div>
             </div>
             <div class="art">
                 <div class="top-art clearfix">
