@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script type="text/javascript" src="js/classTools.js"></script>
+    <title>时事</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var menu = document.getElementsByClassName("menu-item");
+            var allI = document.getElementsByTagName("i");
+            var allLi = document.getElementsByClassName("left-li");
+            var leftMenu = document.querySelectorAll(".left-menu")[0];
+            var articleS = document.querySelectorAll(".article");
+            var articleWrapper = document.getElementById("article-wrapper");
+            for (var i = 0; i < menu.length; i++) {
+                menu[i].num = i;
+                menu[i].onclick = function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        addClass(allI[j], "hide");
+                        removeClass(allLi[j], "selected");
+                        addClass(articleS[j], "hide");
+                    }
+                    removeClass(articleS[this.num], "hide");
+                    addClass(allLi[this.num], "selected");
+                    removeClass(allI[this.num], "hide");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar-nav w">
+            <a class="logo-bar" href="">
+                <img id="logo1" src="img/title.png" alt="">
+                <img id="logo0" src="img/titleReverse.png" alt="">
+            </a>
+            <ul>
+                <li id="line">|</li>
+                <li><a href="http://84074.github.io/history.html" target="_blank">历史</a></li>
+                <li><a href="http://84074.github.io/personages.html" target="_blank">人物</a></li>
+                <li><a href="http://84074.github.io/industry.html" target="_blank">时事</a></li>
+                <li><a href="http://84074.github.io/landscape.html" target="_blank">史迹</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- <div class="guide w">
+        <ul>
+
+        </ul>
+    </div> -->
+    <div class="article-bar w clearfix">
+        <div class="left-bar">
+            <ul class="left-menu">
+                <li id="title">
+                    <h2>时事</h2>
+                </li>
+                <div class="emphasize"></div>
+                <li class="left-li selected"><a class="menu-item" href="javascript:;"><span>肇庆青年的声音响彻了全国</span><i
+                            class="fas fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+        <div id="article-wrapper">
+            <div class="article">
+                <h1>童心向党！肇庆一小学庆祝中国共产党成立100周年</h1>
+                <div class="article-info"></div>
+                <div class="line"></div>
+                <p class="detail">2021年6月25日，
+                    德清县孔子学校举办了以“童心向党·百米长卷绘征程”为主题的百米长卷绘画活动，
+                    以此来庆祝中国共产党成立100周年。
+                    活动中，同学们全神贯注地挥洒手中的画笔，在百米长纸上画出自己心中多彩的中国。
+                    学校方面表示，希望通过多种形式的活动讲好红色故事，传承红色基因。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

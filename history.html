@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script type="text/javascript" src="js/classTools.js"></script>
     <title>历史</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var menu = document.getElementsByClassName("menu-item");
+            var allI = document.getElementsByTagName("i");
+            var allLi = document.getElementsByClassName("left-li");
+            var leftMenu = document.querySelectorAll(".left-menu")[0];
+            var articleS = document.querySelectorAll(".article");
+            var articleWrapper = document.getElementById("article-wrapper");
+            for (var i = 0; i < menu.length; i++) {
+                menu[i].num = i;
+                menu[i].onclick = function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        addClass(allI[j], "hide");
+                        removeClass(allLi[j], "selected");
+                        addClass(articleS[j], "hide");
+                    }
+                    removeClass(articleS[this.num], "hide");
+                    addClass(allLi[this.num], "selected");
+                    removeClass(allI[this.num], "hide");
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <div class="top-bar-wrapper">
+        <div class="top-bar-nav w">
+            <a class="logo-bar" href="">
+                <img id="logo1" src="img/title.png" alt="">
+                <img id="logo0" src="img/titleReverse.png" alt="">
+            </a>
+            <ul>
+                <li id="line">|</li>
+                <li><a href="http://84074.github.io/history.html" target="_blank">历史</a></li>
+                <li><a href="http://84074.github.io/personages.html" target="_blank">人物</a></li>
+                <li><a href="http://84074.github.io/industry.html" target="_blank">时事</a></li>
+                <li><a href="http://84074.github.io/landscape.html" target="_blank">史迹</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- <div class="guide w">
+        <ul>
+
+        </ul>
+    </div> -->
+    <div class="article-bar w clearfix">
+        <div class="left-bar">
+            <ul class="left-menu">
+                <li id="title">
+                    <h2>历史</h2>
+                </li>
+                <div class="emphasize"></div>
+                <li class="left-li selected"><a class="menu-item" href="javascript:;"><span>肇庆抗战简史</span><i
+                            class="fas fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+        <div id="article-wrapper">
+            <div class="article">
+                <h1>肇庆抗战简史</h1>
+                <div class="line"></div>
+                <p class="detail">
+                    民国26年（1937年）至民国32年，有186天，日本侵略者飞机在肇庆和金利、广利、白土、新桥、禄步墟，投下炸弹2864枚（其中燃烧弹53枚），炸死民众856人，炸伤2026人，炸毁民房和店铺5214间，轮船17艘，以及木帆船、渔艇和牲畜一大批。
+                </p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/645.jpg" alt="">
+                    <span>当年，日机轰炸高要禄步圩民船的报道。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">1938年10月下旬广州失陷后，
+                    部分国民党海军从虎门撤退，
+                    来到肇庆和广西梧州，
+                    在两地分别设立粤桂江防总处和江防司令部。
+                    李锡熙时任“执信” 舰舰长，
+                    奉命驻守西江肇庆江面。
+                </p>
+                <p class="detail">
+                    1938年10月29日，江防总处为阻敌西进，派出“执信”“坚如”“仲恺”“仲元”“飞鹏”“湖山”等舰船，由“执信”舰舰长李锡熙统率，从肇庆江面出发，向西江下游日军占领区的三水河口、思贤滘等据点发动进攻。李锡熙指挥舰队英勇奋战，与岸上日军展开了持续3个小时的炮战，当场轰毁敌军炮台4座。当各舰轰击金利马口岗敌据点时，日军炮台突然猛烈发炮，同时派出飞机对舰队进行轰炸。李锡熙所在的“执信”舰不幸被敌炮击中沉没，副舰长林春炘等23人阵亡，15人受伤。舰长李锡熙受重伤后殉国。
+                </p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/646.jpg" alt="">
+                    <span>1940年5月立海军马口抗日阵亡将士纪念碑。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">
+                    1938年10月下旬，
+                    广州及珠三角地区相继沦陷，
+                    日军西犯，
+                    陆续占领了北江东岸的榄岗、木棉一带
+                    及四会马房以下竹洲、旱塘和青岐等地方，
+                    四会因而成为西江地区的抗日前线。
+                </p>
+                <p class="detail-img">
+                    <img class="person" src="http://image.thepaper.cn/www/image/29/285/647.jpg" alt="">
+                    <span>黄显声。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">
+                    鉴于当时严峻的局势，
+                    四会县县长周东在国共合作形势的推动下，
+                    组织了四会县国民兵团自卫队。
+                    黄显声在国民兵团
+                    任第一大队第一中队（马房中队）队长。
+                </p>
+                <p class="detail">
+                    黄显声率队会同从广州撤出来的广东省税警总团、广东省第二战区第四挺进队等国民党地方部队，驻防在大沙、马房一带抗日前线，与日军隔河对峙，抗击日寇，打了许多胜仗。
+                </p>
+                <p class="detail">
+                    1939年10月中旬，100多名日军，分乘数艘橡皮艇，大摇大摆地从榄岗渡江向马房进犯。黄显声闻讯后立即指挥部队，以小分队为作战单位，在马房河滩和河堤埋伏。他带一名神枪手和中队训导员、共产党员杨明埋伏在一棵榕树下。当日军橡皮艇将要靠岸时，黄显声一声令下，各伏击点的机枪步枪火力一齐射向敌人，手榴弹也一颗又一颗地投向敌艇。顷刻间，马房滩头硝烟弥漫，杀声震天，打得日军晕头转向，死的死，伤的伤。这时，黄显声发现一艘橡皮艇上坐着一个督战的日军指挥官，立刻命令身边的神枪手瞄准其开枪。一声枪响，日军指挥官应声而倒，一命呜呼。接着，黄显声命司号员吹起冲锋号，各战斗小分队立即跃出战壕，向敌人冲杀过去。日军顿时乱作一团，不敢恋战，慌忙掉头逃窜，战斗胜利结束。
+                </p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/648.jpg" alt="">
+                    <span>黄显声烈士墓位于广东省肇庆市四会市大沙镇大布村委大布岗山上。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">1944年9月，
+                    日军从广州地区兵分五路向西、向北进入广西，
+                    西江沿岸各县沦陷。
+                    随后，广东省临委和东江军政委员会
+                    根据党中央的指示，
+                    在全省范围内开展抗日游击战。</p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/649.jpg" alt="">
+                    <span>从西江封开段打涝出来的日军遗留弹药。</span>
+                </p>
+                <p class="detail-img">
+                    <img class="person" src="http://image.thepaper.cn/www/image/29/285/650.jpg" alt="">
+                    <span>徐儒华。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">1944年9月22日，
+                    德庆县城被日寇攻陷。
+                    当天晚上，
+                    中共党员徐儒华即从樵云中学赶回高良旺阜，
+                    召集中共地下党员开紧急会议。
+                    会议根据中共广东省临委关于恢复党的活动
+                    和开展抗日武装斗争的指示，
+                    决定成立中共德庆临时党小组，
+                    并迅速在三河地区发动群众，组织自卫武装。</p>
+                <p class="detail">
+                    1944年10月，中共德庆临时党小组在高良旺阜顺廓祠堂召集了有地方士绅参加的三河地区各界群众大会，正式宣布成立平和乡公所和抗日联防自卫队，大会推举了徐儒华担任平和乡乡长和联防自卫队总指挥。会后，在徐儒华等领导下，各乡村纷纷建立自卫组织。
+                </p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/651.jpg" alt="">
+                    <span>被拆后的罗阳抗日战斗旧址 - 罗阳炮楼。中共肇庆市委党史研究室 供图</span>
+                </p>
+                <p class="detail">
+                    11月下旬，300多名日伪军从县城扑向高良罗阳，企图一举扑灭我抗日自卫队。徐儒华闻讯后，决定给日伪军以迎头痛击。他立即调动联防自卫队和群众1000多人，分两路夹击敌人：一路由联防自卫队中队长徐少雄率领从旺阜经南源到罗阳，坚守在罗阳光裕堂对面的山头；一路由徐儒华亲自率领到达佛料，对敌伪形成两面夹击之势。当敌伪军进入预定地段时，自卫队员和群众利用土枪土炮向敌人猛烈袭击。
+                </p>
+                <p class="detail">
+                    战斗打响不久，附近诰赠乡自卫队也赶来参加战斗，在罗阳背后山上袭击敌军，形成三路夹击的态势。激战了3个多小时，敌人看到周围都是群众和自卫队，形势不利，只好狼狈逃窜，战斗胜利结束。此战，毙敌10多名，缴枪10多支，打击了敌人的嚣张气焰，增强了德庆人民的抗敌信心。
+                </p>
+                <p class="detail">1945年2月，
+                    中共在广宁、四会领导武装起义，
+                    成立西江人民抗日义勇队，
+                    并在四会、广宁交界的五指山建立抗日根据地。
+                    5月9日，珠江纵队击溃日伪军2万人的10路围攻；
+                    19日，与西江人民抗日义勇队会师于广宁县罗汶。</p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/652.jpg" alt="">
+                    <span>广宁与四会交界的五指山</span>
+                </p>
+                <p class="detail">1945年8月16日下午，
+                    日军乘船撤离。</p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/654.jpg" alt="">
+                    <span>1944年日军侵占高要时，被高要抗日武装缴获的日军骑兵战刀。</span>
+                </p>
+                <p class="detail-img">
+                    <img src="四会抗日阵亡将士纪念碑，位于四会城中街道城中社区中山公园内" alt="">
+                    <span>四会抗日阵亡将士纪念碑，位于四会城中街道城中社区中山公园内</span>
+                </p>
+                <p class="detail-img">
+                    <img src="http://image.thepaper.cn/www/image/29/285/656.jpg" alt="">
+                    <span>2000年12月在封开西江河段挖掘出日军遗弃的弹药108箱</span>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -8,4 +8,30 @@
   height: 0;
   clear: both;
 }
+.transparent {
+  opacity: 0;
+}
+.none {
+  width: 0;
+  height: 0;
+}
+.invert {
+  filter: invert(100%);
+}
+.bottom {
+  margin-top: 100px;
+  padding-top: 50px;
+  font-size: 14px;
+  color: #424242;
+  border-top: 1px rgba(224, 224, 224) solid;
+}
+.bottom a {
+  font-size: 12px;
+  color: #757575;
+  text-decoration: none;
+}
+.bottom span {
+  font-size: 12px;
+  color: #b0b0b0;
+}
 /*# sourceMappingURL=./public.css.map */
