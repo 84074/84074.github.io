@@ -1,3 +1,7 @@
+body,
+html {
+  width: 1349px;
+}
 .w {
   width: 1180px;
   margin: 0 auto;
