@@ -1,11 +1,11 @@
 body,
 html {
+  width: 1349px;
   margin: 0;
   padding: 0;
 }
 .title-bar #small {
-  margin-left: 700px;
-  width: 600px;
+  width: 500px;
 }
 .top-bar-wrapper {
   margin: 0;
