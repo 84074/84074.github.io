@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时代在“肈”唤</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/zhao.png">
+    <script type="text/javascript" src="js/tools.js"></script>
+    <script type="text/javascript" src="js/classTools.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var titleArr = ["肇庆抗战简史", "彭泽民", "叶挺独立团团部旧址", "肇庆青年的声音响彻了全国！"];
+            var loc = ["http://84074.github.io/history","http://84074.github.io/personages0","http://84074.github.io/landscape0","http://84074.github.io/industry0"];
+            var titleShow=document.getElementById("title-show");
+            
+            var title = document.getElementsByClassName("title");
+            var imgList = document.getElementsByClassName("main");
+            var disc = document.getElementsByClassName("disc");
+            var num = 0;
+            var timer;
+            disc[num].style.backgroundColor = "rgb(255, 255, 255)";
+            autoChange();
+            for (var i = 0; i < disc.length; i++) {
+                disc[i].num = i;
+                disc[i].onmousemove = function () {
+                    clearInterval(timer);
+                    var oldNum = num;
+                    num = this.num;
+                    setA();
+                    fade(oldNum, this.num, autoChange());
+                }
+            }
+            function autoChange() {
+                timer = setInterval(function () {
+                    fade(num, (num + 1) % imgList.length, function () { });
+                    num = (num + 1) % imgList.length;
+                    setA();
+                }, 3500)
+            }
+            function fade(fadeout, fadein, callback) {
+                addClass(imgList[fadeout], "transparent");
+                removeClass(imgList[fadein], "transparent");
+                callback && callback();
+            }
+            function setA() {
+                for (var i = 0; i < disc.length; i++) {
+                    disc[i].style.backgroundColor = "";
+                    disc[i].style.opacity = "";
+                }
+                disc[num].style.backgroundColor = "rgb(255, 255, 255)";
+                titleShow.href=loc[num];
+                title[0].innerHTML = titleArr[num];
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="top-bar-wrapper">
+    </div>
+    <div class="title-bar w"><img src="img/title.png" alt="">
+        <img id="small" src="img/logo.png" alt="">
+    </div>
+    <div class="middle-bar-nav w">
+        <ul class="">
+            <li class="box"><a href="history?value=0" target="_blank">历史</a></li>
+            <li class="line"><span>|</span></li>
+            <li class="box"><a href="personages?value=0" target="_blank">人物</a></li>
+            <li class="line"><span>|</span></li>
+            <li class="box"><a href="industry?value=0" target="_blank">时事</a></li>
+            <li class="line"><span>|</span></li>
+            <li class="box"><a href="landscape?value=0" target="_blank">史迹</a></li>
+        </ul>
+    </div>
+
+    <div class="article w">
+        <div class="top-article">
+            <div class="main-img">
+                <a id="title-show" href="history">
+                    <img class="main" src="http://image.thepaper.cn/www/image/29/285/642.jpg" alt="">
+                    <img class="main transparent"
+                        src="https://img1.baidu.com/it/u=1014623314,1146190149&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    <img class="main transparent"
+                        src="http://www.zhaoqing.gov.cn/img/0/71/71722/2092076.jpg" alt="">
+                    <img class="main transparent"
+                        src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0505%2F748075a3p00qsld2v015pd200s200grg00it00b8.png&thumbnail=650x2147483647&quality=80&type=jpg" alt="">
+                </a>
+                <div class="nav-div-wrapper">
+                    <div class="title-bar">
+                        <a id="title-show" class="title" target="" href="http://84074.github.io/history.html">
+                            肇庆抗战简史
+                        </a>
+                    </div>
+                    <div class="nav-div">
+                        <a class="disc" href="javascript:;"></a>
+                        <a class="disc" href="javascript:;"></a>
+                        <a class="disc" href="javascript:;"></a>
+                        <a class="disc" href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <div class="top-art clearfix">
+                    <div class="left">
+                        <a href="http://84074.github.io/landscape0">
+                            <img src="http://www.zhaoqing.gov.cn/img/0/71/71722/2092076.jpg" alt="">
+                            <div class="title">
+                                <h2>叶挺独立团团部旧址</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="landscape0.html?value=1">肇庆政治研究会旧址</a></li>
+                            <li><a href="http://84074.github.io/landscape2">西江宣传养成所遗址</a></li>
+                            <li><a href="http://84074.github.io/landscape3">广宁排沙抗日武装起义遗址</a></li>
+                            <li><a href="http://84074.github.io/landscape4">广宁县农民协会旧址</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wxid_y3lbspq3w7n52 mid-art clearfix">
+                    <div class="left">
+                        <a href="http://84074.github.io/personages5">
+                            <img src="http://ds.zhaoqing.gov.cn/dsrw/201203/W020120416797009092240.jpg" alt="">
+                            <div class="title">
+                                <h2>周其鉴</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="http://84074.github.io/personages1">黄显声</a> </li>
+                            <li><a href="http://84074.github.io/personages2">梵杨</a> </li>
+                            <li><a href="http://84074.github.io/personages3">陈伯忠</a> </li>
+                            <li><a href="http://84074.github.io/personages4">陈瘦骏</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bot-art clearfix">
+                    <div class="left">
+                        <a href="http://84074.github.io/industry0">
+                            <img src="img/industry.jpg" alt="">
+                            <div class="title">
+                                <h2>肇庆青年的声音响彻了全国！</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="http://84074.github.io/industry1">童心向党！肇庆一小学庆祝中国共产党成立100周年</a></li>
+                            <li><a href="http://84074.github.io/history">肇庆抗战简史</a></li>
+                            <li><a href="http://84074.github.io/personage6">黄森福</a></li>
+                            <li><a href="http://84074.github.io/personages0">彭泽民</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div class="bottom w">
+            友情链接：<a href="http://www.zhaoqing.gov.cn/" target="_blank">肇庆市人民政府门户网站</a> <span>|</span> <a
+                href="http://www.sihui.gov.cn/" target="_blank">四会市人民政府门户网站</a>
+            </br></br>
+            <a id="bottom" href="#">回到顶部</a>
+        </div>
+    </center>
+</body>
+
+</html>
