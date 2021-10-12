@@ -1,8 +1,9 @@
 body,
 html {
-  width: 1349px;
   margin: 0;
   padding: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: 100% 100%;
 }
 .title-bar #small {
   width: 500px;
@@ -22,6 +23,8 @@ html {
 }
 .middle-bar-nav ul {
   height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .middle-bar-nav ul .line {
   display: inline-block;
@@ -40,6 +43,7 @@ html {
 }
 .middle-bar-nav ul li a {
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   line-height: 50px;
   color: black;
@@ -61,6 +65,7 @@ html {
   width: 605px;
   height: 100%;
   position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .article .top-article .main-img .main {
   width: 605px;
@@ -101,14 +106,25 @@ html {
 .article .top-article .art {
   float: right;
   width: 540px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.article .top-article .art .center {
+  margin-left: 20px;
 }
 .article .top-article .art .left img {
   margin-top: 12px;
 }
 .article .top-article .art .top-art {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .article .top-article .art .mid-art {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.article .top-article .art .bot-art {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .article .top-article .art .left {
@@ -139,10 +155,11 @@ html {
   margin-left: 40px;
 }
 .article .top-article .art .right ul {
+  list-style-type: disc;
   height: 120px;
+  list-style-image: url("../img/disc.png");
 }
 .article .top-article .art .right ul li {
-  list-style: disc;
   line-height: 30px;
   height: 30px;
   font-size: 13px;
